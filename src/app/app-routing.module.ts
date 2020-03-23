@@ -13,11 +13,11 @@ import { StudentEditComponent } from './student/student-edit/student-edit.compon
 const routes: Routes = [
   {path:'', redirectTo:'/majors/list', pathMatch:'full'},
   {path:'majors/list', component: MajorListComponent},
-  {path:'majors/detail', component: MajorDetailComponent},
+  {path:'majors/detail/:id', component: MajorDetailComponent},
   {path:'majors/create', component: MajorCreateComponent},
   {path:'majors/edit', component: MajorEditComponent},
   {path:'students/list', component: StudentListComponent},
-  {path:'students/detail', component: StudentDetailComponent},
+  {path:'students/detail/:id', component: StudentDetailComponent},
   {path:'students/create', component: StudentCreateComponent},
   {path:'students/edit', component: StudentEditComponent},
   {path:'**', component: MajorListComponent}

@@ -1,0 +1,19 @@
+<app-menu></app-menu>
+<div class='compound'>
+    <table class='table table-sm'>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>SAT</th>
+        <th>GPA</th>
+        <th>Major</th>
+    </tr>
+    <tr *ngFor='let s of students'>
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.sat}}</td>
+        <td>{{s.gpa}}</td>
+        <td>{{s.major != null ? s.major.name : "UNDECLARED"}}</td>
+    </tr>
+    </table>
+</div>

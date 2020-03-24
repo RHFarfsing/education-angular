@@ -15,11 +15,11 @@ const routes: Routes = [
   {path:'majors/list', component: MajorListComponent},
   {path:'majors/detail/:id', component: MajorDetailComponent},
   {path:'majors/create', component: MajorCreateComponent},
-  {path:'majors/edit', component: MajorEditComponent},
+  {path:'majors/edit/:id', component: MajorEditComponent},
   {path:'students/list', component: StudentListComponent},
   {path:'students/detail/:id', component: StudentDetailComponent},
   {path:'students/create', component: StudentCreateComponent},
-  {path:'students/edit', component: StudentEditComponent},
+  {path:'students/edit/:id', component: StudentEditComponent},
   {path:'**', component: MajorListComponent}
  ];
 

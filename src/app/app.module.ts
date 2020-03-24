@@ -10,8 +10,8 @@ import { MajorDetailComponent } from './major/major-detail/major-detail.componen
 import { MajorCreateComponent } from './major/major-create/major-create.component';
 import { MajorEditComponent } from './major/major-edit/major-edit.component';
 import { MenuComponent } from './menu/menu/menu.component';
-import { StudentListComponent } from './student/student/student-list/student-list.component';
-import { StudentDetailComponent } from './student/student/student-detail/student-detail.component';
+import { StudentListComponent } from './student/student-list/student-list.component';
+import { StudentDetailComponent } from './student/student-detail/student-detail.component';
 import { StudentCreateComponent } from './student/student-create/student-create.component';
 import { StudentEditComponent } from './student/student-edit/student-edit.component';
 import { SortPipe } from './pipes/sort.pipe';

@@ -28,14 +28,13 @@
         <tr>             
             <td>Major</td>
             <td>
-                <input [(ngModel)]="student.major.name" type="number" size="10" >  
-              </td>
-        </tr>
-        <tr *ngIf="!student.major">
-            <td>Major</td>
-            <td>
-                <input value="UNDECLARED" tyoe="text" disbaled>
+                <select [(ngModel)]="student.majorId">
+                    <option *ngFor="let m of majors" value="{{m.id}}">{{m.name}}</option>
+                    <option value="">Undeclared</option>
+                </select>
             </td>
-        </tr>      
+            <tr>
+                <button (click)="save()" class"btn btn-danger">Save</button>
+            </tr>
     </table>
 </div>
